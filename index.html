@@ -4,67 +4,115 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Random Quote Generator - VEDA Technology Internship</title>
-  <meta name="description" content="A clean, responsive Random Quote Generator built with HTML5, CSS3, and JavaScript." />
+  <meta name="description" content="A clean, modern, and responsive Random Quote Generator built with HTML5, CSS3, and JavaScript for VEDA Technology Internship Task 8." />
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- CSS stylesheet -->
+  <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <h1 class="title">Random Quote Generator</h1>
-      <p class="subtitle">Get a little inspiration with every click.</p>
-    </header>
+  <!-- Decorative Ambient Background Shapes -->
+  <div class="bg-shape shape-1" aria-hidden="true"></div>
+  <div class="bg-shape shape-2" aria-hidden="true"></div>
 
+  <!-- Top Application Header -->
+  <header class="top-bar">
+    <div class="top-bar-content">
+      <div class="brand">
+        <span class="brand-name">VEDA TECHNOLOGY</span>
+        <span class="brand-divider" aria-hidden="true">•</span>
+        <span class="brand-sub">Web Development Internship</span>
+      </div>
+      <span class="badge">TASK 8</span>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <span class="eyebrow">DAILY INSPIRATION</span>
+      <h1 class="title">Random Quote Generator</h1>
+      <p class="subtitle">Discover a new thought, idea, or inspiration with every click.</p>
+    </section>
+
+    <!-- Main Quote Card -->
     <main class="quote-card">
+      <div class="card-header-bar">
+        <span class="category-badge">
+          <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          INSPIRATION
+        </span>
+      </div>
+
       <div class="quote-icon" aria-hidden="true">&ldquo;</div>
-      
+
       <blockquote class="quote-content">
         <p id="quote-text" class="quote-text">Click the button below to generate your first quote.</p>
       </blockquote>
-      
-      <div class="author-container">
-        <span class="dash" aria-hidden="true">&mdash;</span>
+
+      <div class="author-wrapper">
+        <div class="author-line" aria-hidden="true"></div>
         <span id="quote-author" class="quote-author">Author Name</span>
       </div>
 
       <div class="actions">
         <button id="new-quote-btn" class="btn btn-primary" type="button">
-          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
           </svg>
-          New Quote
+          <span>New Quote</span>
         </button>
 
         <button id="share-quote-btn" class="btn btn-secondary" type="button" aria-label="Share quote">
-          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="18" cy="5" r="3"/>
             <circle cx="6" cy="12" r="3"/>
             <circle cx="18" cy="19" r="3"/>
             <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
             <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
           </svg>
-          Share Quote
+          <span>Share Quote</span>
         </button>
       </div>
     </main>
 
-    <!-- Notification Toast for Copy/Share Feedback -->
-    <div id="toast" class="toast" role="status" aria-live="polite" aria-hidden="true">
-      <span id="toast-message">Quote copied to clipboard!</span>
-    </div>
+    <!-- Simple Info/Stats Bar -->
+    <section class="stats-bar" aria-label="Project Highlights">
+      <div class="stat-item">
+        <span class="stat-icon" aria-hidden="true">📚</span>
+        <span class="stat-text">15+ Quotes</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true">•</div>
+      <div class="stat-item">
+        <span class="stat-icon" aria-hidden="true">🎲</span>
+        <span class="stat-text">Random Selection</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true">•</div>
+      <div class="stat-item">
+        <span class="stat-icon" aria-hidden="true">⚡</span>
+        <span class="stat-text">Instant Inspiration</span>
+      </div>
+    </section>
 
+    <!-- Footer -->
     <footer class="footer">
-      <p>VEDA Technology Internship &bull; Task 8</p>
+      <p>VEDA Technology &bull; Web Development Internship &bull; Task 8</p>
     </footer>
   </div>
 
-  <!-- JavaScript logic -->
+  <!-- Notification Toast for Copy/Share Feedback -->
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-hidden="true">
+    <span id="toast-message">Quote copied to clipboard!</span>
+  </div>
+
+  <!-- JavaScript Logic -->
   <script src="script.js"></script>
 </body>
 </html>
